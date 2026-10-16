@@ -49,8 +49,9 @@ mostly for French but not for Swahili, where the model reverts to English within
 - MGSM/GSM8K is old and widely published, and the model's training data cannot be audited.
   Absolute accuracy is probably inflated by contamination, and the paired differences could
   be biased in either direction (memorised English solutions could survive non-English
-  reasoning, or be disrupted by it). MGSM also contains French and Chinese translations of
-  these exact problems but no Swahili ones.
+  reasoning, or be disrupted by it). MGSM itself contains professional French, Chinese and
+  Swahili translations of these exact 250 problems, so the model may have seen each problem
+  in every language we test.
 - Trace length in tokens is not comparable across languages: the tokenizer spends about
   2.5 tokens per Swahili word against 1.1 per English word. Length is a confound, not a
   clean measure of reasoning effort.
