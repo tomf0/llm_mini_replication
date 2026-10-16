@@ -1,0 +1,14 @@
+# Local M1 debug run: small model, few questions, both arms. Checks the code, not the model.
+model: Qwen/Qwen3-0.6B
+backend: hf
+dtype: float16
+languages: [en, fr, zh, sw]
+variants: [instruct_en, prefill]
+n_questions: 10
+max_new_tokens: 1536
+temperature: 0.6
+top_p: 0.95
+top_k: 20
+seed: 0
+batch_size: 4
+output: results/dev/local_dev.jsonl

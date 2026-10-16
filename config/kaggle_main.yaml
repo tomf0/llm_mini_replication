@@ -1,0 +1,15 @@
+# Kaggle main run: all 250 MGSM-en questions x 4 reasoning languages x 2 arms = 2000 generations.
+model: Qwen/Qwen3-1.7B
+backend: vllm
+dtype: float16
+languages: [en, fr, zh, sw]
+variants: [instruct_en, prefill]
+n_questions: 250
+max_new_tokens: 3072
+temperature: 0.6
+top_p: 0.95
+top_k: 20
+seed: 0
+batch_size: 64
+max_model_len: 4096
+output: results/kaggle/main_qwen3_1.7b_seed0.jsonl

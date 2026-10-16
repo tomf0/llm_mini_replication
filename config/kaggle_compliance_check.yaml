@@ -1,0 +1,15 @@
+# Kaggle, first cell: does Qwen3-1.7B follow "reason in X" at all? 2 questions x 3 langs x 3 variants.
+model: Qwen/Qwen3-1.7B
+backend: vllm
+dtype: float16
+languages: [fr, zh, sw]
+variants: [instruct_en, instruct_native, prefill]
+question_ids: [0, 1]
+max_new_tokens: 1024
+temperature: 0.6
+top_p: 0.95
+top_k: 20
+seed: 0
+batch_size: 32
+max_model_len: 2048
+output: results/kaggle/compliance_check.jsonl

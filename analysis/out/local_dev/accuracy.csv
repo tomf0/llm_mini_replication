@@ -1,0 +1,9 @@
+variant,lang,n,accuracy,ci_lo,ci_hi,unparsed_rate,truncated_rate,compliance_rate,mean_target_frac,median_trace_tokens
+instruct_en,en,10,0.5,0.2,0.8,0.2,0.2,1.0,0.9873999999999998,657.0
+instruct_en,fr,10,0.6,0.3,0.9,0.2,0.2,0.0,0.0007,892.5
+instruct_en,zh,10,0.5,0.2,0.8,0.2,0.2,0.0,0.0,448.0
+instruct_en,sw,10,0.6,0.3,0.9,0.1,0.1,0.0,0.0,810.5
+prefill,en,10,0.4,0.1,0.7,0.5,0.5,1.0,0.9944000000000001,976.5
+prefill,fr,10,0.5,0.2,0.8,0.0,0.0,0.9,0.8772,154.5
+prefill,zh,10,0.4,0.1,0.7,0.2,0.2,1.0,0.9804,322.0
+prefill,sw,10,0.3,0.1,0.6,0.0,0.0,0.0,0.03,92.0

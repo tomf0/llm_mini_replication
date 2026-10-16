@@ -1,0 +1,5 @@
+variant,lang,n_compliant,accuracy,ci_lo,ci_hi
+instruct_en,en,10,0.5,0.2,0.8
+prefill,en,10,0.4,0.1,0.7
+prefill,fr,9,0.4444444444444444,0.1111111111111111,0.7777777777777778
+prefill,zh,10,0.4,0.1,0.7

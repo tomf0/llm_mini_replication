@@ -1,0 +1,7 @@
+variant,lang,n_pairs,diff_vs_en,ci_lo,ci_hi,lang_right_en_wrong,lang_wrong_en_right
+instruct_en,fr,10,0.1,0.0,0.3,1,0
+instruct_en,zh,10,0.0,0.0,0.0,0,0
+instruct_en,sw,10,0.1,0.0,0.3,1,0
+prefill,fr,10,0.1,0.0,0.3,1,0
+prefill,zh,10,0.0,-0.4,0.4,2,2
+prefill,sw,10,-0.1,-0.3,0.0,0,1
