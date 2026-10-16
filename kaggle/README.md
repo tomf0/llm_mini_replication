@@ -17,6 +17,9 @@ with Qwen3-0.6B and the `hf` backend. The `vllm` backend is untested until it ru
    `results/kaggle/` locally. Then run the analysis.
 
 ## If something breaks
+- `RuntimeError: Detected that PyTorch and TorchAudio were compiled with different CUDA versions`:
+  vLLM's torch build clashes with Kaggle's preinstalled torchaudio. Cell 2 now removes torchaudio;
+  if you see this anyway, run `!pip uninstall -y torchaudio` in a new cell and rerun from cell 3.
 - `pip install vllm` fails or vLLM crashes loading the model: set `BACKEND = "hf"` in cell 2 and rerun
   from cell 3. The hf path is slower (batch of 16 runs until its longest trace finishes) but was tested locally.
 - Out of GPU memory with hf: lower `--batch-size` (8, then 4).
